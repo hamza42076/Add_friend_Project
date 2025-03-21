@@ -26,7 +26,7 @@ friends.forEach(function(val,index){
     clutter += `<div id="card">
         <img src="${val.img}" alt="">
         <h1>${val.name}</h1>
-        <p>Great thing take a time empires are not build in a day ,so we should be patience inshaAllah we will acheive everything./p>
+        <p>Great thing take a time empires are not build in a day ,so we should be patience inshaAllah we will acheive everything.</p>
             <h2>${val.status}</h2>
             <button id=${index}>Add Friend</button>
        </div> `
