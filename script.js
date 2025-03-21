@@ -1,6 +1,6 @@
 let friends =[
     {
-        name:"Muhammad Hamza",
+        name:"Mahabia",
         status:"Stranger",
         img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2Bf05s2gtoLDMXBWVVdP57irDuJ5bMiqmKA&s"
     },
