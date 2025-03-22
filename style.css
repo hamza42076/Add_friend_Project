@@ -29,6 +29,18 @@ html,body{
     border-radius: 10px;
 
 }
+#card #Stranger {
+    color: red;
+}
+#card #friends {
+    color: green;
+}
+#card .blue{
+    background-color: blue;
+}
+#card .red{
+    background-color:red;
+}
 #card img{
     height: 100px;
     width: 100px;

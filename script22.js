@@ -19,7 +19,7 @@ let friends =[
         status:"Stranger",
         img:"https://c8.alamy.com/comp/2WG4PKM/700-best-attitude-boy-hoodie-style-whatsapp-dp-profile-pic-2024-handsome-boy-images-download-premium-high-resolution-stock-images-on-alamy-2WG4PKM.jpg"
     },  
-]
+];
 function print(){
     let clutter = "";
 friends.forEach(function(val,index){
@@ -27,15 +27,25 @@ friends.forEach(function(val,index){
         <img src="${val.img}" alt="">
         <h1>${val.name}</h1>
         <p>Great thing take a time empires are not build in a day ,so we should be patience inshaAllah we will acheive everything.</p>
-            <h2>${val.status}</h2>
-            <button id=${index}>Add Friend</button>
+            <h2 id=${val.status}>${val.status}</h2>
+            <button class =${val.status === "Stranger" ? "blue" :"red" } id=${index}>${val.status === "Stranger" ? "Add Friend" : "Remove Friend"}</button>
        </div> `
 })
-document.querySelector("#main").innerHTML = clutter;
+document.querySelector("#main").innerHTML =clutter;
 }
 print();
-document.querySelector("#main").addEventListener("click",function(details){
-    friends[details.target.id].status ="friends";
-    print();    
-})
 
+let res = 0;
+document.querySelector("#main").addEventListener("click",function(details){
+  
+    if (friends[details.target.id].status === "Stranger"){
+        friends[details.target.id].status ="friends";
+        res= 1;
+    }
+    else{
+        friends[details.target.id].status ="Stranger";
+        res = 0;
+    }
+
+    print();
+})
