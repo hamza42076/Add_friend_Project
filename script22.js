@@ -2,22 +2,32 @@ let friends =[
     {
         name:"Mahabia",
         status:"Stranger",
-        img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2Bf05s2gtoLDMXBWVVdP57irDuJ5bMiqmKA&s"
+        img:"mahabia img.jpg",
+        text:"My beauty isn’t just in the way my looks but in the way my shines with kindness, carries strength in her heart, and walks with confidence, leaving behind a glow that lights up the world around her. ✨💕"
     },
     {
         name:"Ehtesham ullah",
         status:"Stranger",
-        img:"https://i.pinimg.com/736x/cf/2b/1d/cf2b1dd0624dd5e24fe0a10590f9eccd.jpg"
+        img:"ehtesham.jpg",
+        text:"Cricket isn't just a game; it's a passion, a battle of skill and willpower, where every run counts, every ball matters, and the spirit of the game teaches patience, perseverance, and the joy of never giving up. 🏏🔥"
     },
     {
         name:"Syed Ashir ",
         status:"Stranger",
-        img:"https://play-lh.googleusercontent.com/vco-LT_M58j9DIAxlS1Cv9uvzbRhB6cYIZJS7ocZksWRqoEPat_QXb6fVFi77lciJZQ=w526-h296-rw"
+        img:"ashir.jpg",
+        text:"A web developer is a creator of the digital world, turning ideas into interactive experiences, where every line of code builds bridges between imagination and reality, shaping the future one website at a time. 💻🚀"
     },  
     {
         name:"Bilal Ahemd Waris ",
         status:"Stranger",
-        img:"https://c8.alamy.com/comp/2WG4PKM/700-best-attitude-boy-hoodie-style-whatsapp-dp-profile-pic-2024-handsome-boy-images-download-premium-high-resolution-stock-images-on-alamy-2WG4PKM.jpg"
+        img:"bilal.jpg",
+        text:"An English teacher is a guide to the power of words, shaping minds with knowledge, unlocking confidence through language, and inspiring students to express themselves and connect with the world. 📚✨"
+    },  
+    {
+        name:"Sheikh bacha ",
+        status:"Stranger",
+        img:"hamza.jpg",
+        text:"A web developer is an architect of the internet, crafting seamless experiences with code, transforming ideas into reality, and building the digital world where creativity meets technology. 💻🚀"
     },  
 ];
 function print(){
@@ -26,7 +36,7 @@ friends.forEach(function(val,index){
     clutter += `<div id="card">
         <img src="${val.img}" alt="">
         <h1>${val.name}</h1>
-        <p>Great thing take a time empires are not build in a day ,so we should be patience inshaAllah we will acheive everything.</p>
+        <p>${val.text} </p>
             <h2 id=${val.status}>${val.status}</h2>
             <button class =${val.status === "Stranger" ? "blue" :"red" } id=${index}>${val.status === "Stranger" ? "Add Friend" : "Remove Friend"}</button>
        </div> `
